@@ -52,14 +52,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  !       │  @       │  #       │  $       │  %       │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+        //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  [       │  ]       │  _       │
+            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp LBKT   &kp RBKT    &kp UNDER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LEFT     │ DOWN     │ UP       │ RIGHT    │  \       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSLH       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
+        //│ LEFT     │ DOWN     │ UP       │ RIGHT    │  \       │   │ DELETE   │ RGUI     │ RALT     │ RCTRL    │  RSHIFT  │
+            &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSLH       &kp DEL    &kp RGUI   &kp RALT   &kp RCTRL  &kp RSHIFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ `        │  ~       │  {       │  }       │  │       │   │          │          │          │          │          │
-           &kp GRAVE   &kp TILDE  &kp LBRC   &kp RBRC   &kp PIPE       &trans     &trans     &trans     &trans     &trans
+        //│ `        │  ~       │  {       │  }       │  │       │   │ GLOBE    │  (       │  )       │  :       │  ;       │
+            &kp GRAVE  &kp TILDE  &kp LBRC   &kp RBRC   &kp PIPE       &kp GLOBE  &kp LPAR   &kp RPAR   &kp COLON  &kp SEMI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &caps_word  &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
