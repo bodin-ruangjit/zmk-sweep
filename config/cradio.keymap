@@ -44,14 +44,14 @@
         layer1 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
-            &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
+        //│ ITALIC   │ UNDERLINE│ UP       │ BOLD     │ HIGHLIGHT│   │          │ HOME     │ PAGE UP  │ PAGE DOWN│ END      │
+            &kp LG(I)  &kp LG(U)  &kp UARW   &kp LG(B)  &kp LS(LG(H))  &none      &kp HOME  &kp PG_UP   &kp PG_DN  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
-            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
+        //│ CODE     │ LEFT     │ DOWN     │ RIGHT    │ DELETE   │   │          │ CMD      │ ALT      │ CTRL     │ SHIFT    │
+            &kp LG(E)  &kp LARW   &kp DARW   &kp RARW   &kp DEL        &none      &kp RGUI   &kp RALT   &kp RCTRL  &kp RSHIFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
-            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
+        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │          │          │          │ PSCREEN  │ INSERT │
+            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &none      &none      &none      &kp PSCRN  &kp INS 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &none          &kp ESC    &kp CAPS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -61,13 +61,13 @@
         layer2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &none          &kp ESC    &kp CAPS
@@ -78,13 +78,13 @@
         layer3 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &none          &kp ESC    &kp CAPS
@@ -95,13 +95,13 @@
         layer4 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
+        //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &none          &kp ESC    &kp CAPS
