@@ -36,12 +36,12 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 1 TAB  &lt 2 SPACE    &lt 3 ENTER &kp BSPC
+                                            &lt 1 TAB  &lt 2 SPACE    &lt 3 ENTER &lt 4 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-        left_layer {
+        layer1 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
@@ -58,36 +58,53 @@
             >;
         };
 
-        right_layer {
+        layer2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  /       │  7       │  8       │  9       │  *       │   │  %       │  :       │  [       │  ]       │  ;       │
-            &kp SLASH  &kp N7     &kp N8     &kp N9     &kp ASTRK      &kp PRCNT  &kp COLON  &kp LBKT   &kp RBKT   &kp SEMI
+        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
+            &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  -       │  4       │  5       │  6       │  +       │   │  \       │ RGUI     │ RALT     │ RCTRL    │  RSHIFT  │
-            &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS       &kp BSLH   &kp RGUI   &kp RALT   &kp RCTRL  &kp RSHIFT
+        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
+            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ,       │  1       │  2       │  3       │  =       │   │ |        │  (       │  )       │  {       │  }       │
-            &kp COMMA  &kp N1     &kp N2     &kp N3     &kp EQUAL      &kp PIPE   &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC
+        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
+            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N0     &kp DOT        &trans     &none 
+                                             &trans     &none          &kp ESC    &kp CAPS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-        tri_layer {
+        layer3 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ F1       │ F2       │ F3       │ F4       │PROFILE 0 │   │PROFILE 3 │ VOL+     │ BRIGHTUP │ NEXT     │ PSCREEN  │
-            &kp F1     &kp F2     &kp F3     &kp F4    &bt BT_SEL 0 &bt BT_SEL 3 &kp C_VOL_UP &kp C_BRI_UP &kp C_NEXT &kp PSCRN 
+        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
+            &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ F5       │ F6       │ F7       │ F8       │PROFILE 1 │   │PROFILE 4 │ VOL-     │ BRIGHTDN │PLAY/PAUSE│          │
-            &kp F5     &kp F6     &kp F7     &kp F8    &bt BT_SEL 1 &bt BT_SEL 4 &kp C_VOL_DN &kp C_BRI_DN &kp C_PP &none
+        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
+            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ F9       │ F10      │ F11      │ F12      │PROFILE 2 │   │ GLOBE    │ MUTE     │ INSERT   │ PREVIOUS │          │
-            &kp F9     &kp F10    &kp F11    &kp F12   &bt BT_SEL 2    &GLOBE    &kp C_MUTE   &kp INS  &kp C_PREV   &none
+        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
+            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none     &bt BT_CLR      &none      &trans
+                                             &trans     &none          &kp ESC    &kp CAPS
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+        layer4 {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
+            &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
+            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
+            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &trans     &none          &kp ESC    &kp CAPS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
