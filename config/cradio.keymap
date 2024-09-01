@@ -86,16 +86,16 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+        //│ F1       │ F2       │ F3       │ F4       │PROFILE 0 │   │ BRIGHTUP │ PAGE UP  │ HOME     │ PSCREEN  │  VOL+    │
+           &kp F1      &kp F2     &kp F3     &kp F4     &bt BT_SEL 0 &kp C_BRI_UP &kp PG_UP  &kp HOME   &kp PSCRN &kp C_VOL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+        //│ F5       │ F6       │ F7       │ F8       │PROFILE 1 │   │ BRIGHTDN │ PAGE DN  │ END      │          │  VOL-    │
+           &kp F5      &kp F6     &kp F7     &kp F8     &bt BT_SEL 1 &kp C_BRI_DN &kp PG_DN  &kp END    &trans    &kp C_VOL_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+        //│ F9       │ F10      │ F11      │ F12      │PROFILE 2 │   │ INSERT   │ PREVIOUS │ NEXT     │          │  MUTE    │
+           &kp F9      &kp F10    &kp F11    &kp F12   &bt BT_SEL 2    &kp INS   &kp C_PREV &kp C_NEXT  &kp C_PP  &kp C_MUTE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                            &bt BT_CLR  &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
