@@ -61,7 +61,7 @@
         //│ `        │  ~       │  {       │  }       │  │       │   │ GLOBE    │  (       │  )       │  :       │  ;       │
             &kp GRAVE  &kp TILDE  &kp LBRC   &kp RBRC   &kp PIPE       &kp GLOBE  &kp LPAR   &kp RPAR   &kp COLON  &kp SEMI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &caps_word  &kp ESC        &trans     &trans
+                                            &caps_word  &kp ESC        &trans     &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -73,12 +73,12 @@
             &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp ASTRK  &kp N7     &kp N8     &kp N9     &kp SLASH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │          │   │  +       │  4       │  5       │  6       │  -       │
-            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &trans         &kp PLUS   &kp N4     &kp N5     &kp N6     &kp MINUS
+            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &none          &kp PLUS   &kp N4     &kp N5     &kp N6     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ,       │  1       │  2       │  3       │  =       │
             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp COMMA  &kp N1     &kp N2     &kp N3     &kp EQUAL 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &kp N0     &kp DOT
+                                             &none      &trans         &kp N0     &kp DOT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -90,12 +90,12 @@
            &kp F1      &kp F2     &kp F3     &kp F4     &bt BT_SEL 0 &kp C_BRI_UP &kp PG_UP  &kp HOME   &kp PSCRN &kp C_VOL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ F5       │ F6       │ F7       │ F8       │PROFILE 1 │   │ BRIGHTDN │ PAGE DN  │ END      │          │  VOL-    │
-           &kp F5      &kp F6     &kp F7     &kp F8     &bt BT_SEL 1 &kp C_BRI_DN &kp PG_DN  &kp END    &trans    &kp C_VOL_DN
+           &kp F5      &kp F6     &kp F7     &kp F8     &bt BT_SEL 1 &kp C_BRI_DN &kp PG_DN  &kp END    &none     &kp C_VOL_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ F9       │ F10      │ F11      │ F12      │PROFILE 2 │   │ INSERT   │ PREVIOUS │ NEXT     │          │  MUTE    │
            &kp F9      &kp F10    &kp F11    &kp F12   &bt BT_SEL 2    &kp INS   &kp C_PREV &kp C_NEXT  &kp C_PP  &kp C_MUTE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &bt BT_CLR  &trans         &trans     &trans
+                                            &bt BT_CLR  &trans         &trans     &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
