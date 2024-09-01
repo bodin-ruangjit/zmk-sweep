@@ -44,7 +44,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 1 TAB   &kp ENTER     &kp SPACE  &lt 2 BSPC
+                                            &lt 2 TAB   &kp ENTER     &kp SPACE  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -52,16 +52,16 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ CODE     │ ITALIC   │ UNDERLINE│ BOLD     │ HIGHLIGHT│   │ HOME     │ PAGE UP  │ UP       │ PAGE DN  │ END      │
-            &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
+        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
+            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LSHIFT   │ LCTRL    │ LALT     │ LGUI     │ DELETE   │   │ @        │ LEFT     │ DOWN     │ RIGHT    │  _       │
-            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
+        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
+            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ UNDO     │ CUT      │ COPY     │ PASTE    │ DUPLICATE│   │  ^       │  #       │  &       │  !       │  $       │
-            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
+        //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
+            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &none          &kp ESC    &caps_word
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
