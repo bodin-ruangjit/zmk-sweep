@@ -70,7 +70,7 @@
         //│  .       │  1       │  2       │  3       │  =       │   │          │          │          │          │          │
             &kp DOT    &kp N1     &kp N2     &kp N3     &kp EQUAL      &none      &none      &none      &none      &none      
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N0     &kp trans      &kp ESC    &kp CAPS
+                                             &kp N0     &trans         &kp ESC    &kp CAPS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -78,16 +78,16 @@
         layer3 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp LG(E)  &kp LG(I)  &kp LG(U)  &kp LG(B)  &kp LS(LG(H))  &kp HOME   &kp PG_UP  &kp UARW   &kp PG_DN  &kp END
+        //│  /       │  `       │  ~       │  !       │  *       │   │  _       │  :       │  [       │  ]       │  ;       │
+            &kp SLASH  &kp GRAVE  &kp TILDE  &kp EXCL   &kp ASTRK      &kp UNDER  &kp COLON  &kp LBKT   &kp RBKT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LGUI   &kp DEL        &kp AT     &kp LARW   &kp DARW   &kp RARW   &kp UNDER
+        //│  -       │  @       │  #       │  $       │  +       │   │  \       │ CMD      │ ALT      │ CTRL     │ SHIFT    │
+            &kp MINUS  &kp AT     &kp HASH   &kp DLLR   &kp PLUS       &kp BSLH   &kp RGUI   &kp RALT   &kp RCTRL  &kp RSHIFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(D)      &kp CARET  &kp HASH   &kp AMPS   &kp EXCL   &kp DLLR 
+        //│  .       │  %       │  ^       │  &       │  =       │   │  |       │  (       │  )       │  {       │  }       │
+            &kp DOT    &kp PRCNT  &kp CARET  &kp AMPS   &kp EQUAL      &kp PIPE   &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &none          &kp ESC    &kp CAPS
+                                             &kp CAPS   &kp ESC        &trans     &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
