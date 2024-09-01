@@ -95,7 +95,7 @@
         //│ F9       │ F10      │ F11      │ F12      │PROFILE 2 │   │          │ PSCREEN  │ MUTE     │ INSERT   │ NEXT     │
             &kp F9     &kp F10    &kp F11    &kp F12   &bt BT_SEL 2    &none     &kp PSCRN &kp C_MUTE   &kp INS    &kp C_NEXT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans    &bt BT_CLR      &none     &trans 
+                                             &none     &bt BT_CLR      &trans    &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
