@@ -22,6 +22,7 @@
         };
     };
 
+
     keymap {
         compatible = "zmk,keymap";
         layer_0 {
@@ -104,7 +105,7 @@
         //│ F9       │ F10      │ F11      │ F12      │PROFILE 2 │   │ GLOBE    │ PREVIOUS │PLAY/PAUSE│ NEXT     │ CLEAR BT │
             &kp F9     &kp F10    &kp F11    &kp F12   &bt BT_SEL 2   &kp GLOBE   &kp C_PREV &kp C_PP   &kp C_NEXT &bt BT_CLR
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp CAPS   &kp ESC        &none      &trans 
+                                             &kp CAPS   &kp ESC        &trans      &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
